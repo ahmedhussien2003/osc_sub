@@ -1,0 +1,71 @@
+ahmedhussien@pop-os:~$ pwd
+/home/ahmedhussien
+ahmedhussien@pop-os:~$ mkdir 'Ahmed Hussien'
+ahmedhussien@pop-os:~$ ch 'Ahmed Hussien'/
+ch: command not found
+ahmedhussien@pop-os:~$ cd 'Ahmed Hussien'/
+ahmedhussien@pop-os:~/Ahmed Hussien$ mkdir 'Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien$ cd 'Documents'/
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ touch file1.txt file2.txt file3.txt
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ ls
+file1.txt  file2.txt  file3.txt
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ cd ..
+ahmedhussien@pop-os:~/Ahmed Hussien$ cd ..
+ahmedhussien@pop-os:~$ cd -
+/home/ahmedhussien/Ahmed Hussien
+ahmedhussien@pop-os:~/Ahmed Hussien$ touch .'hidden_file'
+ahmedhussien@pop-os:~/Ahmed Hussien$ ls
+Documents
+ahmedhussien@pop-os:~/Ahmed Hussien$ ls -a
+.  ..  Documents  .hidden_file
+ahmedhussien@pop-os:~/Ahmed Hussien$ nano file1.txt
+ahmedhussien@pop-os:~/Ahmed Hussien$ cat file1.txt
+I'm ahmed hussien
+ahmedhussien@pop-os:~/Ahmed Hussien$ cd -
+/home/ahmedhussien
+ahmedhussien@pop-os:~$ cd 
+ahmedhussien@pop-os:~$ cd -
+/home/ahmedhussien
+ahmedhussien@pop-os:~$ cd 'Ahmed Hussien'
+ahmedhussien@pop-os:~/Ahmed Hussien$ cd 'Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ mkdir '\-'
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ ls
+'\-'   file1.txt   file2.txt   file3.txt
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ cd '\-'
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents/\-$ cp -r 'Ahmed Hussien' 'Documents'
+cp: cannot stat 'Ahmed Hussien': No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents/\-$ cp -r 'Ahmed Hussien'/ 'Documents'/
+cp: cannot stat 'Ahmed Hussien/': No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents/\-$ cp -R 'Ahmed Hussien' 'Documents'
+cp: cannot stat 'Ahmed Hussien': No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents/\-$ cp -r .. 'Documents'
+cp: cannot copy a directory, '..', into itself, 'Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents/\-$ cp -r 'Documents' ..
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents/\-$ cd ..
+ahmedhussien@pop-os:~/Ahmed Hussien/Documents$ cd ..
+ahmedhussien@pop-os:~/Ahmed Hussien$ ls
+Documents  file1.txt
+ahmedhussien@pop-os:~/Ahmed Hussien$ mv 'Documents' 'my Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien$ ls
+ file1.txt  'my Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien$ ls -a
+ .   ..   file1.txt   .hidden_file  'my Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien$ cat hidden-file
+cat: hidden-file: No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien$ mv 'file2.txt' 'Ahmed Hiussien'/
+mv: cannot stat 'file2.txt': No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien$ mv 'file2.txt' ..
+mv: cannot stat 'file2.txt': No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien$ cd 'Documents'
+bash: cd: Documents: No such file or directory
+ahmedhussien@pop-os:~/Ahmed Hussien$ cd 'my Documents'
+ahmedhussien@pop-os:~/Ahmed Hussien/my Documents$ ls
+'\-'   Documents   file1.txt   file2.txt   file3.txt
+ahmedhussien@pop-os:~/Ahmed Hussien/my Documents$ mv 'file2.txt' 'file3.txt' ..
+ahmedhussien@pop-os:~/Ahmed Hussien/my Documents$ cd ~
+ahmedhussien@pop-os:~$ rm 'Ahmed Hussien'
+rm: cannot remove 'Ahmed Hussien': Is a directory
+ahmedhussien@pop-os:~$ rm -r 'Ahmed Hussien' 
+ahmedhussien@pop-os:~$ ls
+ ahmed     Documents  'Linux summer training'   osc        Public      Videos
+ Desktop   Downloads   Music                    Pictures   Templates
