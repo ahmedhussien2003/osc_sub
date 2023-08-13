@@ -1,0 +1,676 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ahmedhussien@pop-os:~$ pwd
+/home/ahmedhussien
+ahmedhussien@pop-os:~$ ls
+ ahmed     Documents  'Linux summer training'   osc        Public      Videos
+ Desktop   Downloads   Music                    Pictures   Templates
+ahmedhussien@pop-os:~$ cd Downloads
+ahmedhussien@pop-os:~/Downloads$ ls
+Updated-Task-02.zip
+ahmedhussien@pop-os:~/Downloads$ unzip Updated-Task-02.zip
+Archive:  Updated-Task-02.zip
+   creating: Updated-Task-02/
+  inflating: Updated-Task-02/README.txt  
+  inflating: Updated-Task-02/.level-1.tar  
+ahmedhussien@pop-os:~/Downloads$ cd Updated-Task-02
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02$ ls
+README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02$ ls -a
+.  ..  .level-1.tar  README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02$ tar xvf .level-1.tar 
+.level-1/
+.level-1/README.txt
+.level-1/level-2
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02$ cd .level-1
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls
+level-2  README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ cat README.txt
+Decompress "level-2".
+Hint: Most compression tools require it's suffix.
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ file level-2
+level-2: gzip compressed data, was "level-2.tar", last modified: Wed Aug  9 17:59:07 2023, from Unix, original size modulo 2^32 112640
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ tar xvf level-2.tar
+tar: level-2.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ gunzip level-2.tar
+gzip: level-2.tar.gz: No such file or directory
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls -l
+total 16
+-rw-r--r-- 1 ahmedhussien ahmedhussien 9813 Aug  9 19:59 level-2
+-rw-r--r-- 1 ahmedhussien ahmedhussien   72 Aug  9 19:40 README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ tar xvf level-2
+level-2/
+level-2/6QcByCct9B
+level-2/JiMEslX4PO
+level-2/pRQVevx1kv/
+level-2/yWY8iLmL2v
+level-2/L3QwW94Azo/
+level-2/yc0GFVKDtL/
+level-2/mLD2604WjZ
+level-2/o5zluFzkcg/
+level-2/uCBBCPnmb2/
+level-2/AbyVd8kDq7
+level-2/YH3RBGocdA/
+level-2/LXdwN4DGye/
+level-2/NABe6RrZS9
+level-2/IXzIL2c9IA
+level-2/a8wKwwWNRJ
+level-2/mIQgRJXCLp/
+level-2/Yx2PUbl2gA/
+level-2/dcWFp0gN0U/
+level-2/fTBdzWqgkc/
+level-2/F7HxYNlWa1
+level-2/Etsj7NECd9/
+level-2/bvSabnQtuB
+level-2/HRHgAeIQKP
+level-2/QIGyaTtmlW/
+level-2/cUJtGyfwcE/
+level-2/x2OxGPBNwZ/
+level-2/gB9k1O4ZT6
+level-2/Xnmws6DuHJ/
+level-2/PDsc45eDhU
+level-2/7dnQ0OZO7U
+level-2/s82TBxnZgd/
+level-2/VxWCuMyoCO
+level-2/WxGYCzojb5/
+level-2/dwmlaLoghH
+level-2/2dBiyDY1PQ/
+level-2/README.txt
+level-2/D240Im7S6f/
+level-2/n9Gy45gDYd
+level-2/EJd4UALueA
+level-2/ZDe6elrEn5
+level-2/rTAkta2aW2
+level-2/ZwCSnEFDCS
+level-2/54is18fJ6D/
+level-2/b8L3KxPJL3/
+level-2/GuxvN3cJ7U
+level-2/uUeLfbjNyx
+level-2/AKf6S1hWVZ
+level-2/Gf0hDzawoe
+level-2/mTJFxGhibA/
+level-2/T4TiKdPbRw/
+level-2/vOcM3EYMXw/
+level-2/eRz0wDJzB6/
+level-2/lxQpP8fJrM
+level-2/zXOU7yVyjx/
+level-2/cqxENw21F1
+level-2/JVucZ5s2sO/
+level-2/EC1LKYOR0Z
+level-2/HDe7NHRINO/
+level-2/evJEy0ce9D
+level-2/cTJdoZGT00
+level-2/Gi0sWVVQmE
+level-2/rjS1PORSqI
+level-2/QirM8dLKSD/
+level-2/EDPOSQuyWk
+level-2/soPx5vMfvS/
+level-2/2tqNyIRWZk/
+level-2/cYLRnO8xIB
+level-2/ZgiaL4uwSD/
+level-2/oATDmz0CAK/
+level-2/DWahK49MnT
+level-2/GqeOr84K6i/
+level-2/kPIkdmGR9B/
+level-2/wfbzcLn49x
+level-2/5CnJF4NcXe
+level-2/yWegzIJdDb
+level-2/eTY7qTsykD/
+level-2/gBT5u0vLT5/
+level-2/gBT5u0vLT5/level-3
+level-2/WU2NIZw5bL/
+level-2/v9kNm4bENt
+level-2/gUm1Kw3MsJ
+level-2/ciyaIBrj64
+level-2/Y2WinDQzOb/
+level-2/pptcUXKeGS
+level-2/aT6OddrPAr/
+level-2/Ib1jBtgkP4/
+level-2/6LythIyWzQ
+level-2/OBfROJ7kKU/
+level-2/aD09T4P1xb/
+level-2/kVQzoTdmBO
+level-2/7B5l8AC1M8/
+level-2/DQ3kjLgCUV/
+level-2/rn4s52kOCO/
+level-2/hsM9mQuMTH/
+level-2/7f6nrbSyXM
+level-2/8HuZDGUf7D
+level-2/l8fShvYkRA
+level-2/4Qm9FLdd1E
+level-2/CoXO2qfhv8
+level-2/ABtpOP8TR9/
+level-2/X7by8vw474
+level-2/OQUNDxbuAf/
+level-2/o1hEPIsnq0
+level-2/lcVizkoO1R
+level-2/afHUHOaYAb
+level-2/4TqWZorrCe/
+level-2/rzz4HDYtQb/
+level-2/6jKgIUUWGx/
+level-2/clktsGviqW/
+level-2/3aI6ZRWi7g/
+level-2/BsdD4ojJkc/
+level-2/emEeo94yqd
+level-2/UUrQyToe6M/
+level-2/VkL2bz9W98
+level-2/bc83b2Byu2/
+level-2/HC3gnSrNHL
+level-2/E0bi5j8X9V
+level-2/H2TS1vp6Xt/
+level-2/fky7p46DOi/
+level-2/jGu9MApzJB
+level-2/xiRKbhzAt6/
+level-2/kuDj7Ti4Id
+level-2/4CkUBprXze/
+level-2/AVR4cOJJui/
+level-2/u8APo7fuFv
+level-2/KNXMn8sBL8
+level-2/po63smRLBt
+level-2/P9w2t9K9Ju
+level-2/NuvecJk6rH/
+level-2/dW436qn2Pa/
+level-2/g18DV62wEd
+level-2/SkWLO4DmJj/
+level-2/FKtcWd8ViA
+level-2/f4sJ94QCRL
+level-2/TynxkdcmfZ/
+level-2/DYCdqY7wJN
+level-2/PBQjGeeXZ2
+level-2/zTpHflQtBt/
+level-2/URJcbPH7ig/
+level-2/Uo2uLQHfWm
+level-2/01VzXCtEZS/
+level-2/ECIShbzsBE
+level-2/uYt23HMkvu/
+level-2/BeSbKu0Ogb/
+level-2/1t7LeNZeIl
+level-2/mMwQyrbtaZ/
+level-2/waa5BUbYjL/
+level-2/Qv3QTzvZC1
+level-2/UkoXWlT8ck/
+level-2/4bq72IzcAj/
+level-2/cuL74htcTP/
+level-2/ymuoaRLefH
+level-2/VMVoKBX4Qu
+level-2/OlDXrxU8tn/
+level-2/VUOJouKqL9
+level-2/09tuxAUkSZ
+level-2/rHC2JXoQSc
+level-2/lvEy6vrtZe/
+level-2/ZhfPkBCn6B
+level-2/Q6QURkVvYf
+level-2/Sv7z35zbDG/
+level-2/4OAvfgFenY/
+level-2/40Mg6vDbYN/
+level-2/iJfohlDIrt
+level-2/NB8PtjcBPu
+level-2/hynub0MKNl
+level-2/feBbPjPHsA/
+level-2/3HClX3dFMm/
+level-2/OEQ9RG7Cam/
+level-2/zQ85ieoBzD
+level-2/PVhcqo825N
+level-2/0MaqBh51eE/
+level-2/kr6RDEYCed/
+level-2/v2LInrvkDO/
+level-2/y7U81AE7BP/
+level-2/vm5P2xLF3s
+level-2/3nhuQzOgpI
+level-2/tmDRcrdYa9
+level-2/8lNsncDmgT
+level-2/1Rc48mLISP
+level-2/AXkzOy8ZzP
+level-2/AofrZBGKhB/
+level-2/uH7zN1UJSF/
+level-2/n80qgsvhlQ/
+level-2/WWgF2QTu1U/
+level-2/WzkBDyZf09/
+level-2/l6FQ8rGXcW
+level-2/jbZwCGWF1u/
+level-2/FUSxQX2TeD
+level-2/jzjKDCAuJh
+level-2/UkXg7Lp9iV/
+level-2/Mn1k5s3x2R/
+level-2/O0Jt20BDT8/
+level-2/fSikeo7Jtz
+level-2/SpGacqvoQe/
+level-2/dkbSpLYJE5
+level-2/w9ophYtx44/
+level-2/rnTFX18Jh9
+level-2/KO4TANambB
+level-2/k0KGHDEFmp
+level-2/nV9Fht2ABW
+level-2/n8QxXKvUat
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls
+level-2  README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1$ cd level-2
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ ls
+01VzXCtEZS  a8wKwwWNRJ  DQ3kjLgCUV  Gf0hDzawoe  L3QwW94Azo  OQUNDxbuAf  TynxkdcmfZ  x2OxGPBNwZ
+09tuxAUkSZ  ABtpOP8TR9  dW436qn2Pa  Gi0sWVVQmE  l6FQ8rGXcW  P9w2t9K9Ju  u8APo7fuFv  X7by8vw474
+0MaqBh51eE  AbyVd8kDq7  DWahK49MnT  GqeOr84K6i  l8fShvYkRA  PBQjGeeXZ2  uCBBCPnmb2  xiRKbhzAt6
+1Rc48mLISP  aD09T4P1xb  dwmlaLoghH  gUm1Kw3MsJ  lcVizkoO1R  PDsc45eDhU  uH7zN1UJSF  Xnmws6DuHJ
+1t7LeNZeIl  afHUHOaYAb  DYCdqY7wJN  GuxvN3cJ7U  lvEy6vrtZe  po63smRLBt  UkoXWlT8ck  Y2WinDQzOb
+2dBiyDY1PQ  AKf6S1hWVZ  E0bi5j8X9V  H2TS1vp6Xt  LXdwN4DGye  pptcUXKeGS  UkXg7Lp9iV  y7U81AE7BP
+2tqNyIRWZk  AofrZBGKhB  EC1LKYOR0Z  HC3gnSrNHL  lxQpP8fJrM  pRQVevx1kv  Uo2uLQHfWm  yc0GFVKDtL
+3aI6ZRWi7g  aT6OddrPAr  ECIShbzsBE  HDe7NHRINO  mIQgRJXCLp  PVhcqo825N  URJcbPH7ig  YH3RBGocdA
+3HClX3dFMm  AVR4cOJJui  EDPOSQuyWk  HRHgAeIQKP  mLD2604WjZ  Q6QURkVvYf  uUeLfbjNyx  ymuoaRLefH
+3nhuQzOgpI  AXkzOy8ZzP  EJd4UALueA  hsM9mQuMTH  mMwQyrbtaZ  QIGyaTtmlW  UUrQyToe6M  yWegzIJdDb
+40Mg6vDbYN  b8L3KxPJL3  emEeo94yqd  hynub0MKNl  Mn1k5s3x2R  QirM8dLKSD  uYt23HMkvu  yWY8iLmL2v
+4bq72IzcAj  bc83b2Byu2  eRz0wDJzB6  Ib1jBtgkP4  mTJFxGhibA  Qv3QTzvZC1  v2LInrvkDO  Yx2PUbl2gA
+4CkUBprXze  BeSbKu0Ogb  Etsj7NECd9  iJfohlDIrt  n80qgsvhlQ  README.txt  v9kNm4bENt  ZDe6elrEn5
+4OAvfgFenY  BsdD4ojJkc  eTY7qTsykD  IXzIL2c9IA  n8QxXKvUat  rHC2JXoQSc  VkL2bz9W98  ZgiaL4uwSD
+4Qm9FLdd1E  bvSabnQtuB  evJEy0ce9D  jbZwCGWF1u  n9Gy45gDYd  rjS1PORSqI  vm5P2xLF3s  ZhfPkBCn6B
+4TqWZorrCe  ciyaIBrj64  f4sJ94QCRL  jGu9MApzJB  NABe6RrZS9  rn4s52kOCO  VMVoKBX4Qu  zQ85ieoBzD
+54is18fJ6D  clktsGviqW  F7HxYNlWa1  JiMEslX4PO  NB8PtjcBPu  rnTFX18Jh9  vOcM3EYMXw  zTpHflQtBt
+5CnJF4NcXe  CoXO2qfhv8  feBbPjPHsA  JVucZ5s2sO  NuvecJk6rH  rTAkta2aW2  VUOJouKqL9  ZwCSnEFDCS
+6jKgIUUWGx  cqxENw21F1  FKtcWd8ViA  jzjKDCAuJh  nV9Fht2ABW  rzz4HDYtQb  VxWCuMyoCO  zXOU7yVyjx
+6LythIyWzQ  cTJdoZGT00  fky7p46DOi  k0KGHDEFmp  O0Jt20BDT8  s82TBxnZgd  w9ophYtx44
+6QcByCct9B  cUJtGyfwcE  fSikeo7Jtz  KNXMn8sBL8  o1hEPIsnq0  SkWLO4DmJj  waa5BUbYjL
+7B5l8AC1M8  cuL74htcTP  fTBdzWqgkc  KO4TANambB  o5zluFzkcg  soPx5vMfvS  wfbzcLn49x
+7dnQ0OZO7U  cYLRnO8xIB  FUSxQX2TeD  kPIkdmGR9B  oATDmz0CAK  SpGacqvoQe  WU2NIZw5bL
+7f6nrbSyXM  D240Im7S6f  g18DV62wEd  kr6RDEYCed  OBfROJ7kKU  Sv7z35zbDG  WWgF2QTu1U
+8HuZDGUf7D  dcWFp0gN0U  gB9k1O4ZT6  kuDj7Ti4Id  OEQ9RG7Cam  T4TiKdPbRw  WxGYCzojb5
+8lNsncDmgT  dkbSpLYJE5  gBT5u0vLT5  kVQzoTdmBO  OlDXrxU8tn  tmDRcrdYa9  WzkBDyZf09
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ find -iname "*.txt"
+./README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ cat README.txt
+Locate "level-3".
+Use a general method to decompress it.
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ find -name level-3
+./gBT5u0vLT5/level-3
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ cd gBT5u0vLT5
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ ls
+level-3
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ file level-3
+level-3: bzip2 compressed data, block size = 900k
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ bunzip2 level-3
+bunzip2: Can't guess original name for level-3 -- using level-3.out
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ tar xf level-3
+tar: level-3: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ ls
+level-3.out
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ cd level-3.out
+bash: cd: level-3.out: Not a directory
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ cd level-3
+bash: cd: level-3: No such file or directory
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ tar xf level-3.out
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ ls
+level-3  level-3.out
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ cd level-3
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ ls
+00aBxtql7r  5ME7YKcHsa  82aRYKaCZB  Bb0kZiNxDz  dBJSXzmpb1  FeBBLsJEYS  HXq7gqQZ5Z  JlhNaDm4f7  L5DOn3iY18  N5lXyVotHN  Ou1q6zOh5n  R0LpA1qK4F  sVyNLUXzut  W6AdwbmalK  XkrAGaosYZ
+0aba2tPi4R  5tAchjHlmE  88exEg2MMo  BbreWoCXSv  Dd9KxIjxSB  FJsgrBEwbJ  i4CkeVfT7S  JnOT2WHKbE  L8ZzpZTLz5  nBoQgGxoGX  oV3aef60WL  R6okint5JZ  T0gYx5T5ks  WfUKyzFeEv  xRxKkdCTU8
+0QYBUNJixX  5tJnO1Mwzf  8IOqsSAWIo  bduLsR7v4K  dK320XCmR0  flbjrqIXMS  iCR4qC97HM  jpO4wGMT57  LeUtklcfmE  NdkrRTZmr9  OXZ3OOGJ7O  R82WkcyQAx  Tbi1MdwiMX  WFyKhZdOcx  xYCpOSRLsl
+17pfO4tY4m  5VoPA03kvi  8OLXyd5ai0  bOKXTvk63r  DKiaUm3WBb  fn95Z2sG3o  IE4xWwbydi  JqAekDHYif  LKfMizQQjE  NHag0dTW3U  oZ5HOQe6X0  rcEkx0b0WC  tEgA7tGwxB  wgibrPHhJq  xYlmccmE5f
+1NBA3mJTQC  6AJpxbHYkm  8u4f62oAYb  BrJvEu79eg  Doi1I9Z8TE  FYrh0rmC4q  IiLRIuK1Fi  jrMKucOmtp  lowIuX2RQI  nlgqxKuRC3  p194n4sSpi  README.txt  TezFlyJz9o  WhTtCYas3M  Y0nB0Ep1my
+1pnvifRmA6  6C8RwQ9kGP  8X1ovlX6ex  BTf86zJsB3  dqbKkDKbZl  G9UhKYNLgv  IKeqpTmvmW  jVBkVAbTHj  LtH4X99Uw3  NLM96g2hH3  p3ARvi0q4F  rgNTkxVkxN  TFkiwAHDrG  wJC19bchr2  y1IAp2YdZc
+22ix6enm8X  6hnWZbro0I  9CA6eRBprt  byVoAmiOqs  dtLZdglPV3  GaMed1WIDN  ioOe8b7TsJ  jVGv0HeZvG  LZ5jebusoa  Nmuh6DvLkc  p6PVEBfSyK  RnL5L0QLbY  Tt0xmDrg4Y  WLuasYnMvP  Ye8R8ZOvJ9
+2GsF4Kn1PG  6JPHCI1K8M  9GqYmpQsAS  bze36b6xjZ  Dux6sHDdCW  gcb0bfLbVM  iOplykVsBo  jvyPQ8Z8ht  M1vV6QxnH1  nR711EHtmU  PaOzJn0sJV  RPZAvV75tm  tZCE2HQg8s  Wm14GdEGcm  ygasPrK3kG
+2IFaRh0Jxc  6lie6mPCRe  9my7brVWmo  C5KrlOGYlu  EHm7bcCxj1  gfLQDXjJAW  ip23ESdwGT  JYdPDFpOIe  m59pSiQG2p  nSC9OkT1E3  PDJdFxfgvh  RU4rJzjPfg  uAw4PKT7E0  wpJyCPLODS  YgeyHmPrtP
+30msooUqJf  6mnK6keHIi  9NNnGuH7A1  cDfzzIGULi  epBL6naqQR  Gksn5ca8Jn  IygdcTaoYP  k2yYJNQcLu  m7lRDpRTUJ  nwt49CVPtC  penDnjNMQc  RWWLnFwGtv  udqz57oeuX  wpoGQ7WmSg  ysdoXYcYQq
+3Ig28f7Xa8  6mpTfHgnlX  9QBLcfEf91  cF1AG2dtLr  ePj0HMi3nh  gOWuBZZgn2  iymCtoFUVf  K56S3V4AQ6  MaqkHpS39h  O009zeKkif  pH9s3o8foP  rwZwqdxHhJ  ufdeX2Dk7C  WSxUR7IJd8  YVAPjrh8Up
+3SSDrwrwmt  6vigp6VM7d  a6HPyy5Mz5  cjcKUQDGLl  Eqk382soFH  GPaN65ikSl  j3JsNAEsm1  K9kyHBbw7y  MKQErXMkPE  O0V7mQCicJ  pI49N7Zoxn  rzSTDqa7oV  v2ME2J4GuF  wZ4LJKpHW6  zEmK04yIqc
+3TpnDd6PaY  6ZJgIXN3P0  A8SqBitLRB  cKiyNtE0yD  eT21MMr22o  gu78Zpnknw  J3K5BY52dp  Kfce3CFjhh  moQuVgMB1f  o6Q2i1NUXc  Pmf5TqkkYg  SaaZymLdoG  V64A9vKnYq  x2CDPgz6Jk  ZenzUsQydR
+3wTdqmDig6  71qxiSKgAY  aFjSvqXqWE  ClbTpohwVU  eT909HWyck  gu92R3c92I  J5feTUwPso  KJBdbwTmzD  mRET49bBGR  OAbH1oFg57  pO4Lt5DPrX  SaQtx8SNld  vkaOISlk2I  x3Nvoy3Ucl  zet1AFeHNl
+3XXNloi4gV  74gKRNrKVf  AI8sfDgnhT  cStCLsSELl  ETRyNzIpYk  gupiPOsJzC  jahdjqT54b  kkIu8kVXLo  mu6c42Y1qo  OaRp7TV8pe  psmL4dk69Y  sf7ajd5INC  vLWtq7N2aR  x3SkxfEItU  zghxQE4JGJ
+3YhvETOVcv  77RwxhcZTx  AJtW9NcRLy  ctnOoPIga1  ev8BCScTMa  hb4zKjD5G4  JArjmQWPVq  kOIOppD8hx  mwILTjPhCP  ObIefWWqqM  pXXxEWcKkz  skVRxkHK04  VneCQhwmfv  X62Vq1yIyL  ZNq1fiVP6F
+4jFmUBgygR  7C4OyiuQc4  ANRcGwDkvK  cWRi45wacA  F5Db7l8s9j  hBv1LejGKu  JBDnoFKLcx  kp1ujuDGKO  mxG418at98  OFx3U24MoP  q4gh4nODZa  sNrtW0eiZF  vUbRKbYlKR  X6lkChFKsj  zTfi6AwgZQ
+4vG2fYLy6B  7nMGZvigiL  ayHSb1kjNd  cWZv9iI87X  F9OYJjkGiB  Hf8ovJhWKI  JbMcWq9tku  krWRFtvYDP  mydABLXwyL  OHWTswrtBk  qFO0JDSF0N  SqAZPx7CbA  Vw5Jm3saUP  XapfbudtZp  zxmnKldpmY
+53IaK7n1np  7PFGHcmfa2  b4BF572o41  cX6YaqFDFY  fCLOGDR05y  hGCeu2NgZ5  Jc0EEC4sua  kT3eEAfVcY  n4d9SlSzcV  ojc7SuLzMV  Qh9GBAd3mF  SRgPbWeEG6  vz1uLzTKjO  xBsGYZHomA  zzgiKI2xSS
+5H5OLdA8qE  7sxFwD2jGw  b957oPA24t  D5JYr3I592  Fdvgo1aqTT  HuSBc8QKYi  JgVwSWAUsr  kwmQK5z76U  n4MCXv5XM2  orzpz7CBBQ  QM053Y9Vw1  sRhTcN4PIw  VZw2jtUdZD  xigSiLU79u  zZU6ymQky6
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ find -name "*.txt"
+./README.txt
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cat README.txt
+You're seeking a file with a certain size.
+Find the link to get the size.
+
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ ls -li
+total 804
+1191301 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 00aBxtql7r
+1191475 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 0aba2tPi4R
+1191489 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 0QYBUNJixX
+1191554 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 17pfO4tY4m
+1191265 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 1NBA3mJTQC
+1191308 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 1pnvifRmA6
+1191449 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 22ix6enm8X
+1191248 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 2GsF4Kn1PG
+1191533 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 2IFaRh0Jxc
+1191544 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 30msooUqJf
+1191175 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 3Ig28f7Xa8
+1191478 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 3SSDrwrwmt
+1191443 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 3TpnDd6PaY
+1191543 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 3wTdqmDig6
+1191262 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 3XXNloi4gV
+1191557 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 3YhvETOVcv
+1191503 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 4jFmUBgygR
+1191229 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 4vG2fYLy6B
+1191260 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 53IaK7n1np
+1191551 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 5H5OLdA8qE
+1191240 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 5ME7YKcHsa
+1191469 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 5tAchjHlmE
+1191252 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 5tJnO1Mwzf
+1191547 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 5VoPA03kvi
+1191249 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6AJpxbHYkm
+1191467 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6C8RwQ9kGP
+1191526 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6hnWZbro0I
+1191453 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6JPHCI1K8M
+1191446 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6lie6mPCRe
+1191234 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 6mnK6keHIi
+1191288 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6mpTfHgnlX
+1191498 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6vigp6VM7d
+1191208 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 6ZJgIXN3P0
+1191491 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 71qxiSKgAY
+1191479 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 74gKRNrKVf
+1191239 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 77RwxhcZTx
+1191290 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 7C4OyiuQc4
+1191532 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 7nMGZvigiL
+1191156 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 7PFGHcmfa2
+1191226 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 7sxFwD2jGw
+1191173 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 82aRYKaCZB
+1191497 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 88exEg2MMo
+1191182 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 8IOqsSAWIo
+1191490 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 8OLXyd5ai0
+1191464 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 8u4f62oAYb
+1191244 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 8X1ovlX6ex
+1191167 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 9CA6eRBprt
+1191281 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 9GqYmpQsAS
+1191555 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 9my7brVWmo
+1191251 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 9NNnGuH7A1
+1191250 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 9QBLcfEf91
+1191264 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 a6HPyy5Mz5
+1191553 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 A8SqBitLRB
+1191280 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 aFjSvqXqWE
+1191559 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 AI8sfDgnhT
+1191484 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 AJtW9NcRLy
+1191444 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 ANRcGwDkvK
+1191562 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ayHSb1kjNd
+1191534 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 b4BF572o41
+1191516 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 b957oPA24t
+1191287 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Bb0kZiNxDz
+1191228 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 BbreWoCXSv
+1191271 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 bduLsR7v4K
+1191315 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 bOKXTvk63r
+1191482 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 BrJvEu79eg
+1191302 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 BTf86zJsB3
+1191514 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 byVoAmiOqs
+1191451 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 bze36b6xjZ
+1191223 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 C5KrlOGYlu
+1191445 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 cDfzzIGULi
+1191221 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 cF1AG2dtLr
+1191561 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 cjcKUQDGLl
+1191170 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 cKiyNtE0yD
+1191161 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 ClbTpohwVU
+1191238 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 cStCLsSELl
+1191235 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 ctnOoPIga1
+1191163 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 cWRi45wacA
+1191472 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 cWZv9iI87X
+1191305 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 cX6YaqFDFY
+1191460 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 D5JYr3I592
+1191508 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 dBJSXzmpb1
+1191282 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Dd9KxIjxSB
+1191319 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 dK320XCmR0
+1191277 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 DKiaUm3WBb
+1191180 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Doi1I9Z8TE
+1191470 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 dqbKkDKbZl
+1191205 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 dtLZdglPV3
+1191459 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Dux6sHDdCW
+1191276 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 EHm7bcCxj1
+1191513 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 epBL6naqQR
+1191488 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 ePj0HMi3nh
+1191178 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Eqk382soFH
+1191296 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 eT21MMr22o
+1191456 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 eT909HWyck
+1191193 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ETRyNzIpYk
+1191174 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 ev8BCScTMa
+1191440 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 F5Db7l8s9j
+1191237 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 F9OYJjkGiB
+1191317 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 fCLOGDR05y
+1191268 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Fdvgo1aqTT
+1191207 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 FeBBLsJEYS
+1191222 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 FJsgrBEwbJ
+1191187 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 flbjrqIXMS
+1191539 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 fn95Z2sG3o
+1191267 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 FYrh0rmC4q
+1191198 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 G9UhKYNLgv
+1191321 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 GaMed1WIDN
+1191480 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 gcb0bfLbVM
+1191164 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 gfLQDXjJAW
+1191558 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 Gksn5ca8Jn
+1191564 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 gOWuBZZgn2
+1191487 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 GPaN65ikSl
+1191215 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 gu78Zpnknw
+1191549 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 gu92R3c92I
+1191437 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 gupiPOsJzC
+1191438 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 hb4zKjD5G4
+1191196 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 hBv1LejGKu
+1191241 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Hf8ovJhWKI
+1191213 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 hGCeu2NgZ5
+1191309 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 HuSBc8QKYi
+1191504 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 HXq7gqQZ5Z
+1191160 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 i4CkeVfT7S
+1191465 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 iCR4qC97HM
+1191297 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 IE4xWwbydi
+1191499 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 IiLRIuK1Fi
+1191266 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 IKeqpTmvmW
+1191510 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ioOe8b7TsJ
+1191486 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 iOplykVsBo
+1191320 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ip23ESdwGT
+1191242 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 IygdcTaoYP
+1191219 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 iymCtoFUVf
+1191190 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 j3JsNAEsm1
+1191550 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 J3K5BY52dp
+1191540 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 J5feTUwPso
+1191471 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 jahdjqT54b
+1191318 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 JArjmQWPVq
+1191286 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 JBDnoFKLcx
+1191270 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 JbMcWq9tku
+1191212 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Jc0EEC4sua
+1191185 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 JgVwSWAUsr
+1191436 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 JlhNaDm4f7
+1191447 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 JnOT2WHKbE
+1191246 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 jpO4wGMT57
+1191520 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 JqAekDHYif
+1191224 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 jrMKucOmtp
+1191476 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 jVBkVAbTHj
+1191168 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 jVGv0HeZvG
+1191191 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 jvyPQ8Z8ht
+1191448 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 JYdPDFpOIe
+1191211 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 k2yYJNQcLu
+1191225 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 K56S3V4AQ6
+1191454 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 K9kyHBbw7y
+1191255 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 Kfce3CFjhh
+1191523 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 KJBdbwTmzD
+1191204 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 kkIu8kVXLo
+1191455 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 kOIOppD8hx
+1191303 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 kp1ujuDGKO
+1191495 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 krWRFtvYDP
+1191439 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 kT3eEAfVcY
+1191192 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 kwmQK5z76U
+1191195 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 L5DOn3iY18
+1191452 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 L8ZzpZTLz5
+1191528 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 LeUtklcfmE
+1191500 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 LKfMizQQjE
+1191463 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 lowIuX2RQI
+1191546 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 LtH4X99Uw3
+1191169 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 LZ5jebusoa
+1191505 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 M1vV6QxnH1
+1191217 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 m59pSiQG2p
+1191323 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 m7lRDpRTUJ
+1191481 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 MaqkHpS39h
+1191531 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 MKQErXMkPE
+1191183 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 moQuVgMB1f
+1191166 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 mRET49bBGR
+1191461 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 mu6c42Y1qo
+1191519 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 mwILTjPhCP
+1191496 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 mxG418at98
+1191537 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 mydABLXwyL
+1191306 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 n4d9SlSzcV
+1191294 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 n4MCXv5XM2
+1191157 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 N5lXyVotHN
+1191521 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 nBoQgGxoGX
+1191177 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 NdkrRTZmr9
+1191269 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 NHag0dTW3U
+1191188 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 nlgqxKuRC3
+1191236 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 NLM96g2hH3
+1191515 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 Nmuh6DvLkc
+1191257 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 nR711EHtmU
+1191254 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 nSC9OkT1E3
+1191535 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 nwt49CVPtC
+1191316 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 O009zeKkif
+1191285 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 O0V7mQCicJ
+1191172 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 o6Q2i1NUXc
+1191278 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 OAbH1oFg57
+1191441 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 OaRp7TV8pe
+1191186 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ObIefWWqqM
+1191162 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 OFx3U24MoP
+1191158 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 OHWTswrtBk
+1191176 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ojc7SuLzMV
+1191312 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 orzpz7CBBQ
+1191210 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Ou1q6zOh5n
+1191274 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 oV3aef60WL
+1191466 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 OXZ3OOGJ7O
+1191507 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 oZ5HOQe6X0
+1191298 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 p194n4sSpi
+1191279 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 p3ARvi0q4F
+1191179 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 p6PVEBfSyK
+1191300 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 PaOzJn0sJV
+1191261 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 PDJdFxfgvh
+1191256 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 penDnjNMQc
+1191311 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 pH9s3o8foP
+1191442 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 pI49N7Zoxn
+1191304 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Pmf5TqkkYg
+1191263 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 pO4Lt5DPrX
+1191201 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 psmL4dk69Y
+1191536 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 pXXxEWcKkz
+1191184 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 q4gh4nODZa
+1191232 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 qFO0JDSF0N
+1191199 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Qh9GBAd3mF
+1191530 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 QM053Y9Vw1
+1191272 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 R0LpA1qK4F
+1191493 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 R6okint5JZ
+1191291 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 R82WkcyQAx
+1191289 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 rcEkx0b0WC
+1191202 -rw-r--r-- 1 ahmedhussien ahmedhussien   75 Aug  9 19:35 README.txt
+1191218 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 rgNTkxVkxN
+1191462 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 RnL5L0QLbY
+1191468 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 RPZAvV75tm
+1191457 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 RU4rJzjPfg
+1191477 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 RWWLnFwGtv
+1191511 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 rwZwqdxHhJ
+1191529 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 rzSTDqa7oV
+1191473 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 SaaZymLdoG
+1191206 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 SaQtx8SNld
+1191230 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 sf7ajd5INC
+1191435 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 skVRxkHK04
+1191434 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 sNrtW0eiZF
+1191194 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 SqAZPx7CbA
+1191275 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 SRgPbWeEG6
+1191314 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 sRhTcN4PIw
+1191231 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 sVyNLUXzut
+1191450 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 T0gYx5T5ks
+1191542 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 Tbi1MdwiMX
+1191292 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 tEgA7tGwxB
+1191220 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 TezFlyJz9o
+1191527 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 TFkiwAHDrG
+1191258 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Tt0xmDrg4Y
+1191273 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 tZCE2HQg8s
+1191307 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 uAw4PKT7E0
+1191474 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 udqz57oeuX
+1191216 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ufdeX2Dk7C
+1191253 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 v2ME2J4GuF
+1191284 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 V64A9vKnYq
+1191565 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 vkaOISlk2I
+1191203 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 vLWtq7N2aR
+1191458 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 VneCQhwmfv
+1191522 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 vUbRKbYlKR
+1191233 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Vw5Jm3saUP
+1191171 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 vz1uLzTKjO
+1191509 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 VZw2jtUdZD
+1191189 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 W6AdwbmalK
+1191197 -rw-r--r-- 1 ahmedhussien ahmedhussien   34 Aug  9 19:35 WfUKyzFeEv
+1191227 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 WFyKhZdOcx
+1191293 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 wgibrPHhJq
+1191492 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 WhTtCYas3M
+1191512 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 wJC19bchr2
+1191560 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 WLuasYnMvP
+1191506 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Wm14GdEGcm
+1191485 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 wpJyCPLODS
+1191209 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 wpoGQ7WmSg
+1191283 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 WSxUR7IJd8
+1191322 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 wZ4LJKpHW6
+1191494 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 x2CDPgz6Jk
+1191214 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 x3Nvoy3Ucl
+1191501 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 x3SkxfEItU
+1191541 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 X62Vq1yIyL
+1191181 lrwxrwxrwx 1 ahmedhussien ahmedhussien   10 Aug  9 19:35 X6lkChFKsj -> WfUKyzFeEv
+1191245 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 XapfbudtZp
+1191247 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 xBsGYZHomA
+1191525 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 xigSiLU79u
+1191159 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 XkrAGaosYZ
+1191538 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 xRxKkdCTU8
+1191518 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 xYCpOSRLsl
+1191165 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 xYlmccmE5f
+1191200 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 Y0nB0Ep1my
+1191556 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 y1IAp2YdZc
+1191517 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 Ye8R8ZOvJ9
+1191552 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ygasPrK3kG
+1191502 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 YgeyHmPrtP
+1191310 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ysdoXYcYQq
+1191545 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 YVAPjrh8Up
+1191313 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 zEmK04yIqc
+1191483 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ZenzUsQydR
+1191243 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 zet1AFeHNl
+1191259 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 zghxQE4JGJ
+1191563 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 ZNq1fiVP6F
+1191548 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 zTfi6AwgZQ
+1191524 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 zxmnKldpmY
+1191299 drwxr-xr-x 2 ahmedhussien ahmedhussien 4096 Aug  9 19:35 zzgiKI2xSS
+1191295 -rw-r--r-- 1 ahmedhussien ahmedhussien    0 Aug  9 19:35 zZU6ymQky6
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ ls
+00aBxtql7r  5ME7YKcHsa  82aRYKaCZB  Bb0kZiNxDz  dBJSXzmpb1  FeBBLsJEYS  HXq7gqQZ5Z  JlhNaDm4f7  L5DOn3iY18  N5lXyVotHN  Ou1q6zOh5n  R0LpA1qK4F  sVyNLUXzut  W6AdwbmalK  XkrAGaosYZ
+0aba2tPi4R  5tAchjHlmE  88exEg2MMo  BbreWoCXSv  Dd9KxIjxSB  FJsgrBEwbJ  i4CkeVfT7S  JnOT2WHKbE  L8ZzpZTLz5  nBoQgGxoGX  oV3aef60WL  R6okint5JZ  T0gYx5T5ks  WfUKyzFeEv  xRxKkdCTU8
+0QYBUNJixX  5tJnO1Mwzf  8IOqsSAWIo  bduLsR7v4K  dK320XCmR0  flbjrqIXMS  iCR4qC97HM  jpO4wGMT57  LeUtklcfmE  NdkrRTZmr9  OXZ3OOGJ7O  R82WkcyQAx  Tbi1MdwiMX  WFyKhZdOcx  xYCpOSRLsl
+17pfO4tY4m  5VoPA03kvi  8OLXyd5ai0  bOKXTvk63r  DKiaUm3WBb  fn95Z2sG3o  IE4xWwbydi  JqAekDHYif  LKfMizQQjE  NHag0dTW3U  oZ5HOQe6X0  rcEkx0b0WC  tEgA7tGwxB  wgibrPHhJq  xYlmccmE5f
+1NBA3mJTQC  6AJpxbHYkm  8u4f62oAYb  BrJvEu79eg  Doi1I9Z8TE  FYrh0rmC4q  IiLRIuK1Fi  jrMKucOmtp  lowIuX2RQI  nlgqxKuRC3  p194n4sSpi  README.txt  TezFlyJz9o  WhTtCYas3M  Y0nB0Ep1my
+1pnvifRmA6  6C8RwQ9kGP  8X1ovlX6ex  BTf86zJsB3  dqbKkDKbZl  G9UhKYNLgv  IKeqpTmvmW  jVBkVAbTHj  LtH4X99Uw3  NLM96g2hH3  p3ARvi0q4F  rgNTkxVkxN  TFkiwAHDrG  wJC19bchr2  y1IAp2YdZc
+22ix6enm8X  6hnWZbro0I  9CA6eRBprt  byVoAmiOqs  dtLZdglPV3  GaMed1WIDN  ioOe8b7TsJ  jVGv0HeZvG  LZ5jebusoa  Nmuh6DvLkc  p6PVEBfSyK  RnL5L0QLbY  Tt0xmDrg4Y  WLuasYnMvP  Ye8R8ZOvJ9
+2GsF4Kn1PG  6JPHCI1K8M  9GqYmpQsAS  bze36b6xjZ  Dux6sHDdCW  gcb0bfLbVM  iOplykVsBo  jvyPQ8Z8ht  M1vV6QxnH1  nR711EHtmU  PaOzJn0sJV  RPZAvV75tm  tZCE2HQg8s  Wm14GdEGcm  ygasPrK3kG
+2IFaRh0Jxc  6lie6mPCRe  9my7brVWmo  C5KrlOGYlu  EHm7bcCxj1  gfLQDXjJAW  ip23ESdwGT  JYdPDFpOIe  m59pSiQG2p  nSC9OkT1E3  PDJdFxfgvh  RU4rJzjPfg  uAw4PKT7E0  wpJyCPLODS  YgeyHmPrtP
+30msooUqJf  6mnK6keHIi  9NNnGuH7A1  cDfzzIGULi  epBL6naqQR  Gksn5ca8Jn  IygdcTaoYP  k2yYJNQcLu  m7lRDpRTUJ  nwt49CVPtC  penDnjNMQc  RWWLnFwGtv  udqz57oeuX  wpoGQ7WmSg  ysdoXYcYQq
+3Ig28f7Xa8  6mpTfHgnlX  9QBLcfEf91  cF1AG2dtLr  ePj0HMi3nh  gOWuBZZgn2  iymCtoFUVf  K56S3V4AQ6  MaqkHpS39h  O009zeKkif  pH9s3o8foP  rwZwqdxHhJ  ufdeX2Dk7C  WSxUR7IJd8  YVAPjrh8Up
+3SSDrwrwmt  6vigp6VM7d  a6HPyy5Mz5  cjcKUQDGLl  Eqk382soFH  GPaN65ikSl  j3JsNAEsm1  K9kyHBbw7y  MKQErXMkPE  O0V7mQCicJ  pI49N7Zoxn  rzSTDqa7oV  v2ME2J4GuF  wZ4LJKpHW6  zEmK04yIqc
+3TpnDd6PaY  6ZJgIXN3P0  A8SqBitLRB  cKiyNtE0yD  eT21MMr22o  gu78Zpnknw  J3K5BY52dp  Kfce3CFjhh  moQuVgMB1f  o6Q2i1NUXc  Pmf5TqkkYg  SaaZymLdoG  V64A9vKnYq  x2CDPgz6Jk  ZenzUsQydR
+3wTdqmDig6  71qxiSKgAY  aFjSvqXqWE  ClbTpohwVU  eT909HWyck  gu92R3c92I  J5feTUwPso  KJBdbwTmzD  mRET49bBGR  OAbH1oFg57  pO4Lt5DPrX  SaQtx8SNld  vkaOISlk2I  x3Nvoy3Ucl  zet1AFeHNl
+3XXNloi4gV  74gKRNrKVf  AI8sfDgnhT  cStCLsSELl  ETRyNzIpYk  gupiPOsJzC  jahdjqT54b  kkIu8kVXLo  mu6c42Y1qo  OaRp7TV8pe  psmL4dk69Y  sf7ajd5INC  vLWtq7N2aR  x3SkxfEItU  zghxQE4JGJ
+3YhvETOVcv  77RwxhcZTx  AJtW9NcRLy  ctnOoPIga1  ev8BCScTMa  hb4zKjD5G4  JArjmQWPVq  kOIOppD8hx  mwILTjPhCP  ObIefWWqqM  pXXxEWcKkz  skVRxkHK04  VneCQhwmfv  X62Vq1yIyL  ZNq1fiVP6F
+4jFmUBgygR  7C4OyiuQc4  ANRcGwDkvK  cWRi45wacA  F5Db7l8s9j  hBv1LejGKu  JBDnoFKLcx  kp1ujuDGKO  mxG418at98  OFx3U24MoP  q4gh4nODZa  sNrtW0eiZF  vUbRKbYlKR  X6lkChFKsj  zTfi6AwgZQ
+4vG2fYLy6B  7nMGZvigiL  ayHSb1kjNd  cWZv9iI87X  F9OYJjkGiB  Hf8ovJhWKI  JbMcWq9tku  krWRFtvYDP  mydABLXwyL  OHWTswrtBk  qFO0JDSF0N  SqAZPx7CbA  Vw5Jm3saUP  XapfbudtZp  zxmnKldpmY
+53IaK7n1np  7PFGHcmfa2  b4BF572o41  cX6YaqFDFY  fCLOGDR05y  hGCeu2NgZ5  Jc0EEC4sua  kT3eEAfVcY  n4d9SlSzcV  ojc7SuLzMV  Qh9GBAd3mF  SRgPbWeEG6  vz1uLzTKjO  xBsGYZHomA  zzgiKI2xSS
+5H5OLdA8qE  7sxFwD2jGw  b957oPA24t  D5JYr3I592  Fdvgo1aqTT  HuSBc8QKYi  JgVwSWAUsr  kwmQK5z76U  n4MCXv5XM2  orzpz7CBBQ  QM053Y9Vw1  sRhTcN4PIw  VZw2jtUdZD  xigSiLU79u  zZU6ymQky6
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cd X6lkChFKsj
+bash: cd: X6lkChFKsj: Not a directory
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ file X6lkChFKsj
+X6lkChFKsj: symbolic link to WfUKyzFeEv
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ file WfUKyzFeEv
+WfUKyzFeEv: ASCII text
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cat WfUKyzFeEv
+73 bytes is your target file size
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ find -size 73c
+./m7lRDpRTUJ/xVMvVOKNW5
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cd ^C
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cd m7lRDpRTUJ
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ ls
+1204O0idSW  6m74yd7cI9  apvmVmfiQP  DbOxzdWwvV  H0As0BrH5Y  iDt7gCIQOV  knoHOHY78g  N1fQlnGzCp  PB0DYshX73  rGhJCRs7FJ  svoTVwu3Gh  TylxxsM72k  vRbJN3oCei  xVMvVOKNW5
+1bCCZRGCP3  71dGwY7RAS  b4bMOBravk  e6Tw4G6vkb  HdCe5ZBwRJ  IkD0Kc93ts  lvwScjhd7D  N7xJzk6WzX  PmB4iJFTFB  RTZ0Q5Fvz7  SXfN5VyJC1  uhJnWqqhFH  WAPVSLBGJp  ybI2S3pZFm
+1tLJoXdFEx  74nsBmhMC3  BdHMXUF3Kz  EAWdAFGbxf  HHJQG3WBVK  IVmfWnZKGu  M1zxxvd1eC  nbkg0Tbooi  PMp0lDQTYx  rvcjXWFVMX  TdfHEaeirn  UiOdxpQLGg  Wkh2swDjL7  ymqTENE3jY
+2WF03Yxdgm  8VB0glwYod  Binpmv9laL  ECBxKuouhR  HM1rw0RpJv  IZKBNTU02o  m8q6s6WOxG  nlc56s7edL  PWLFYrquMP  saw1DFRZUf  tIMSWkYsun  Uw0gGZm5YB  wTiXKTqwfC  yUrN6JREYC
+3YM1EHLZON  9HqP1kDuSl  C3ZCLEZzrq  ETzNsIhFSh  HqTpd7tcQ2  J18pIlZSbj  mn3e6Ukeu5  nNDDzbFDgI  QOW3NTbKjY  se5SfDz4D8  tiStWqDaVb  uXSht4UWOr  x0tflVoEoO  ZbG73LAmPB
+4RHGy6IOSt  a6KN771BPV  cmlc365V3X  f2eGz5NKur  hyIwkpJEDN  j7QpDNmBD7  MOyiOWLVjV  OAHiGcx0jY  RaXvrEJu4H  SFaRukfNK5  tntCZ8u1xi  vd9wQvpzfs  x9CSQNEVjE  ZPjJENA107
+5UoS4swAbG  AlQLa7wIM8  CZvLOVIhO7  FjhvGNg8Rw  i6u30xsP92  JE6hnwqIgj  mTwkfDKUxV  oLeRCAOaT4  rEbxPsvJxP  SIiBVT5XpG  TomKpe0mD0  VfkLDe3f33  xDpUAdVCLC
+60SWKf61He  ApKtojXYfl  D5g23jQPVs  GAVRSOhw50  iCpJ8wBQq2  K8QCoBIctX  n0WG0kEz4U  PAyQtx6GB1  rEgcbMGD1X  ssa1bacp3F  tx4RZgKOLD  vjhekqgloC  xKO4p8WwNC
+ahmedhussien@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ cat xVMvVOKNW5
+Congrats!! You have finished the Task Successfully, you can rest now :D.
